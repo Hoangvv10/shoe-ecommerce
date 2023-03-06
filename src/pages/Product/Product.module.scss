@@ -1,0 +1,156 @@
+.wrapper {
+    max-width: 1200px;
+    margin: auto;
+    margin-top: 20px;
+}
+
+.inner {
+    display: flex;
+    padding-top: 20px;
+}
+
+.left {
+    width: calc(100% - 456px);
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+    align-content: flex-start;
+    position: sticky;
+    top: 40px;
+    padding-left: 48px;
+    margin-left: 8px;
+    max-height: 669px;
+    min-height: 455px;
+    height: 610px;
+}
+
+.small {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    -webkit-box-flex: 1;
+    flex-grow: 1;
+    gap: 8px;
+    min-width: 100px;
+    max-width: 100px;
+    height: 102%;
+    overflow-y: scroll;
+}
+
+.thumbnail {
+    position: relative;
+    width: 100px;
+    height: 100px;
+    border-radius: 4px;
+}
+
+.thumbnail-img {
+    background: rgb(245, 245, 245);
+    border-radius: 4px;
+    width: 100%;
+    height: 100%;
+}
+
+.big {
+    width: 535px;
+    max-width: 535px;
+    height: 610px;
+}
+
+.big-img {
+    width: 100%;
+    height: 100%;
+}
+
+.right {
+    padding: 0 48px 0 24px;
+}
+
+.header {
+    text-transform: capitalize;
+    font-size: 2.8rem;
+    font-weight: 400;
+    line-height: 1.2;
+}
+
+.sub-title,
+.item-price {
+    font-weight: 300;
+    font-size: 1.6rem;
+    color: rgba($color: #000000, $alpha: 0.7);
+}
+
+.item-price {
+    margin-top: 16px;
+    color: black;
+}
+
+.sale-price,
+.sale-num {
+    margin-left: 8px;
+}
+
+.sale-price {
+    text-decoration-line: line-through;
+}
+
+.sale-num {
+    color: #007d48;
+}
+
+.size-section {
+    margin: 40px 0;
+}
+
+.size-group {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4px;
+    margin-top: 8px;
+}
+
+.size {
+    width: 19%;
+    height: 48px;
+    border: 1px solid #ccc;
+    text-align: center;
+    line-height: 48px;
+    border-radius: 8px;
+
+    &:hover {
+        cursor: pointer;
+    }
+}
+
+.is-active {
+    border-color: black;
+}
+
+.btn {
+    width: 100%;
+    font-size: 2rem;
+    height: 62px;
+    border-radius: 30px;
+    margin: 10px 0;
+    cursor: pointer;
+}
+
+.btn p {
+    padding-right: 4px;
+    display: inline-block;
+}
+
+.primary {
+    background-color: #232f3e;
+    color: #fff;
+}
+
+.secondary {
+    border: 1px solid #232f3e;
+}
+
+.descript {
+    margin-top: 20px;
+    width: 100%;
+    color: rgba($color: #000000, $alpha: 0.7);
+}

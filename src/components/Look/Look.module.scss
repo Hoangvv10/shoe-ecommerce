@@ -1,0 +1,126 @@
+.modal {
+    position: fixed;
+    inset: 0px;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(17, 17, 17, 0.4);
+    backdrop-filter: blur(4px);
+    z-index: 100;
+}
+
+.slider-btn {
+    position: absolute;
+    bottom: 48px;
+    left: 48px;
+    text-transform: capitalize;
+    padding: 8px 32px;
+    background-color: #111111;
+    color: #fff;
+    border-radius: 16px;
+    cursor: pointer;
+}
+
+.look-item {
+    display: flex;
+    max-width: 892px;
+    min-width: 446px;
+    width: fit-content;
+    border-radius: 30px;
+    overflow: hidden;
+    background-color: #fff;
+}
+
+.look-item__img {
+    width: 50%;
+    height: auto;
+}
+
+.look-body {
+    width: 50%;
+}
+
+.look-body,
+.look-info {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    max-height: 350px;
+    overflow-y: auto;
+    margin-top: 20px;
+}
+
+.look-info {
+    width: 100%;
+    margin-left: 24px;
+}
+
+.look-body__img {
+    flex: 140px 0 0;
+    width: 140px;
+    height: auto;
+}
+
+.descript {
+    flex: 1;
+    padding: 0 24px;
+    vertical-align: baseline;
+}
+
+.look-title,
+.look-price {
+    font-weight: 400;
+    font-size: 1.6rem;
+    text-transform: capitalize;
+}
+
+.look-subtitle {
+    color: #757575;
+}
+
+.look-price {
+    margin-bottom: 24px;
+}
+
+.select-input {
+    width: 100%;
+    box-sizing: border-box;
+    border-radius: 4px;
+    outline: 0px;
+    height: 40px;
+    color: rgb(17, 17, 17);
+    font-size: 1.6rem;
+    padding: 0 8px;
+}
+
+.look-btn {
+    position: absolute;
+    bottom: 24px;
+    right: 24px;
+    width: calc(446px - 48px);
+    background-color: #111;
+    min-height: 60px;
+    border-radius: 30px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.btn-text {
+    line-height: 60px;
+    text-transform: capitalize;
+    color: #fff;
+    font-size: 1.6rem;
+}
+
+.look-slider {
+    flex-grow: 1;
+    max-width: 33.3333%;
+    max-height: 33.3333%;
+    position: relative;
+    margin-right: 4px;
+    cursor: pointer;
+}
+
+.look-slider__img {
+    width: 100%;
+    height: 100%;
+}
