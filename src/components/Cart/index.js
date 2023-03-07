@@ -36,7 +36,7 @@ function Cart() {
             totalPrice += item.quantity * item.currentPrice;
         });
         setTotal(Math.floor(totalPrice));
-    }, [total]);
+    }, [cart]);
 
     return (
         <div className={cx('wrapper')}>

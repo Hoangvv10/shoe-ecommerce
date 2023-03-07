@@ -1,0 +1,84 @@
+.logo {
+    width: 100%;
+    border-bottom: 1px solid #dee2e6;
+}
+
+.logo-img {
+    margin: 12px 12px 8px;
+}
+
+.container {
+    max-width: 1200px;
+    display: flex;
+    margin: 0 auto;
+}
+
+.header {
+    margin: 40px 0 15px;
+    font-size: 3rem;
+    text-transform: uppercase;
+    font-weight: 600;
+    line-height: 28px;
+}
+
+.left {
+    width: 60%;
+    margin-right: 20px;
+}
+
+.name,
+.address,
+.city {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.name-input {
+    padding: 0 12px;
+    width: 48%;
+    height: 50px;
+    border: 1px solid #ccc;
+}
+
+.name-message {
+    padding-left: 12px;
+    color: #949698;
+    font-size: 1.4rem;
+    margin-bottom: 16px;
+}
+
+.address-input {
+    padding: 0 12px;
+    width: 100%;
+    height: 50px;
+    border: 1px solid #ccc;
+}
+
+.city {
+    gap: 16px;
+}
+
+.right {
+    width: 40%;
+    margin-left: 20px;
+}
+
+.cart {
+    height: 56vh;
+    overflow: auto;
+    border-bottom: 1px solid #949698;
+}
+
+.item {
+    margin: 8px;
+    display: flex;
+}
+
+.item-img {
+    background: rgb(245, 245, 245);
+    margin-right: 12px;
+    height: 124px;
+    width: 104px;
+}

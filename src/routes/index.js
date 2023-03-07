@@ -4,6 +4,7 @@ import Women from '~/pages/Women';
 import All from '~/pages/All';
 import Sale from '~/pages/Sale';
 import Product from '~/pages/Product';
+import Checkout from '~/pages/Checkout';
 
 export const publicRoutes = [
     { path: '/', component: Home },
@@ -12,6 +13,7 @@ export const publicRoutes = [
     { path: '/all', component: All },
     { path: '/sale', component: Sale },
     { path: '/:title', component: Product },
+    { path: '/checkout', component: Checkout, layout: null },
 ];
 
 export const privateRoutes = [];

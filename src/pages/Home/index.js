@@ -26,7 +26,7 @@ function Home() {
         : (fourth = data.slice(randomNum - 3, randomNum));
 
     const fifth = data.filter(
-        (item) => item.title === 'air 1 retro high' || item.title === 'blaze mid' || item.title === 'Air force 1',
+        (item) => item.title === 'air 1 retro high' || item.title === 'blaze mid' || item.title === 'air force 1',
     );
     return (
         <div className={cx('wrapper')}>
