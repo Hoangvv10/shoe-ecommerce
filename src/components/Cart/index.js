@@ -19,6 +19,10 @@ function Cart() {
     let menuRef = useRef();
 
     useEffect(() => {
+        setOpen(true);
+    }, [cart.length]);
+
+    useEffect(() => {
         let handleOpen = (e) => {
             if (!menuRef.current.contains(e.target)) {
                 setOpen(false);

@@ -5,6 +5,7 @@ import All from '~/pages/All';
 import Sale from '~/pages/Sale';
 import Product from '~/pages/Product';
 import Checkout from '~/pages/Checkout';
+import Kid from '~/pages/Kid';
 
 export const publicRoutes = [
     { path: '/', component: Home },
@@ -14,6 +15,7 @@ export const publicRoutes = [
     { path: '/sale', component: Sale },
     { path: '/:title', component: Product },
     { path: '/checkout', component: Checkout, layout: null },
+    { path: '/kid', component: Kid },
 ];
 
 export const privateRoutes = [];

@@ -6,6 +6,7 @@ import { useDispatch, useSelector } from 'react-redux';
 import { useEffect, useState } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faHeart } from '@fortawesome/free-regular-svg-icons';
+import { faAngleLeft, faAngleRight } from '@fortawesome/free-solid-svg-icons';
 
 const cx = classNames.bind(styles);
 
@@ -36,6 +37,22 @@ function Product() {
                     </div>
                     <div className={cx('big')}>
                         <img src={curItem?.paths[curId]} alt="big-img" className={cx('big-img')} />
+                        <div
+                            className={cx('left-icon')}
+                            onClick={() => {
+                                curId === 0 ? setCurId(curItem?.paths.length - 1) : setCurId((prev) => prev - 1);
+                            }}
+                        >
+                            <FontAwesomeIcon icon={faAngleLeft} />
+                        </div>
+                        <div
+                            className={cx('right-icon')}
+                            onClick={() => {
+                                curId < curItem?.paths.length - 1 ? setCurId((prev) => prev + 1) : setCurId(0);
+                            }}
+                        >
+                            <FontAwesomeIcon icon={faAngleRight} />
+                        </div>
                     </div>
                 </div>
 
@@ -43,7 +60,9 @@ function Product() {
                     <div className={cx('header')}>
                         {curItem?.brand} {curItem?.title}
                     </div>
-                    <div className={cx('sub-title')}>{curItem?.subCategory} Shoes</div>
+                    <div className={cx('sub-title')}>
+                        {curItem?.genders.length > 1 ? 'UNISEX' : `${curItem?.genders[0]}'s`} Shoes
+                    </div>
                     <div className={cx('item-price')}>
                         <span>${curItem?.currentPrice}</span>
                         {curItem?.isSale === true && (
@@ -81,7 +100,9 @@ function Product() {
                             className={cx({
                                 btn: true,
                                 primary: true,
+                                disabled: curSize === 0,
                             })}
+                            disabled={curSize === 0}
                             onClick={() =>
                                 dispatch(
                                     actions.setCart({

@@ -71,21 +71,6 @@ function Sidebar() {
                     ))}
                 </ul>
                 <div className={cx('category')}>
-                    <div className={cx('header')}>Gender</div>
-                    <div>
-                        <input type="checkbox" defaultChecked={page === 'men'} className={cx('category-input')} />
-                        <label className={cx('category-item')}>Men</label>
-                    </div>
-                    <div>
-                        <input type="checkbox" defaultChecked={page === 'women'} className={cx('category-input')} />
-                        <label className={cx('category-item')}>women</label>
-                    </div>
-                    <div>
-                        <input type="checkbox" className={cx('category-input')} />
-                        <label className={cx('category-item')}>unisex</label>
-                    </div>
-                </div>
-                <div className={cx('category')}>
                     <div className={cx('header')}>Price</div>
                     <div>
                         <input

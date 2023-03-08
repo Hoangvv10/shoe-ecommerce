@@ -70,7 +70,6 @@ function Header() {
                 <Navigate title="men" />
                 <Navigate title="woman" />
                 <Navigate title="kid" />
-                <Navigate title="mens" />
                 <Navigate title="sale" />
             </div>
         </div>

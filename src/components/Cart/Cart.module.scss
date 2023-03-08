@@ -22,8 +22,8 @@
 }
 
 .show-up {
-    -webkit-animation: scale-up-hor-right 0.9s cubic-bezier(0.39, 0.575, 0.565, 1) both;
-    animation: scale-up-hor-right 0.9s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+    -webkit-animation: scale-up-hor-right 0.6s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+    animation: scale-up-hor-right 0.6s cubic-bezier(0.39, 0.575, 0.565, 1) both;
 }
 
 .exit {
@@ -150,8 +150,8 @@
 .cart-num {
     width: 20px;
     background-color: #131921;
-    right: 47.8%;
-    top: -8%;
+    right: 4.1vw;
+    top: -0.5vh;
     position: absolute;
     border-radius: 999px;
     height: 20px;

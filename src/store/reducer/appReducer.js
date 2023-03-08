@@ -8,6 +8,7 @@ const initState = {
     page: null,
     saleData: [],
     curShoeId: null,
+    kidData: [],
 };
 
 const appReducer = (state = initState, action) => {
@@ -19,6 +20,7 @@ const appReducer = (state = initState, action) => {
                 menData: action.homeData.filter((item) => item.genders.includes('MEN')),
                 womenData: action.homeData.filter((item) => item.genders.includes('WOMEN')),
                 saleData: action.homeData.filter((item) => item.isSale === true),
+                kidData: action.homeData.filter((item) => item.genders.includes('KIDS')),
             };
 
         case actionTypes.SET_FILTER_LIST:
