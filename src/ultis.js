@@ -10,6 +10,7 @@ const product = [
         fullPrice: 110,
         category: 'FOOTWEAR',
         color: ['white'],
+        curSize: [],
         size: [6, 6.5, 6, 7, 7.5, 8, 8.5, 9, 9.5, 10],
         paths: [
             'https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/4f37fca8-6bce-43e7-ad07-f57ae3c13142/air-force-1-07-mens-shoes-5QFp5Z.png',
@@ -36,6 +37,7 @@ const product = [
         fullPrice: 110,
         category: 'FOOTWEAR',
         color: ['blue'],
+        curSize: [],
         size: [6, 6.5, 6, 7, 7.5, 8, 8.5, 9, 9.5, 10],
         paths: [
             'https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/514c0c6c-8c60-4d65-94c4-73158a3028be/invincible-3-mens-road-running-shoes-CLdFjq.png',
@@ -60,6 +62,7 @@ const product = [
         fullPrice: 200,
         category: 'FOOTWEAR',
         color: ['blue'],
+        curSize: [],
         size: [6, 7, 7.5, 8, 9, 9.5, 10],
         paths: [
             'https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/240233b5-760b-4771-8bed-e5e3198310fb/lebron-xx-asw-basketball-shoes-XHwV4M.png',
@@ -84,6 +87,7 @@ const product = [
         fullPrice: 160,
         category: 'FOOTWEAR',
         color: ['white', 'yellow', 'red'],
+        curSize: [],
         size: [6, 6.5, 6, 7, 7.5, 8, 8.5, 9, 9.5, 10],
         paths: [
             'https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/2f6a1c8d-d8e6-436b-86a2-1e3a13951f78/kd15-asw-basketball-shoes-10P3rj.png',
@@ -108,6 +112,7 @@ const product = [
         fullPrice: 135,
         category: 'FOOTWEAR',
         color: ['purple', 'black', 'white'],
+        curSize: [],
         size: [6.5, 6, 7.5, 8, 9, 9.5, 10],
         paths: [
             'https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/edcba1fe-3eb6-4faa-865a-8d9240fdbb08/zoom-freak-4-asw-basketball-shoes-dsLlqf.png',
@@ -132,6 +137,7 @@ const product = [
         fullPrice: 110,
         category: 'FOOTWEAR',
         color: ['white', 'black'],
+        curSize: [],
         size: [6, 6.5, 6, 7, 7.5, 8, 8.5, 9, 9.5, 10],
         paths: [
             'https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/d8558612-6667-4fb1-8f56-ec4ad8f93e76/luka-1-basketball-shoes-69X9Vs.png',
@@ -156,6 +162,7 @@ const product = [
         fullPrice: 115,
         category: 'FOOTWEAR',
         color: ['white', 'orange'],
+        curSize: [],
         size: [6, 6.5, 6, 7, 7.5, 8, 8.5, 9, 9.5, 10],
         paths: [
             'https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/9c873d33-58ff-4a69-a28c-9deabb3631eb/blazer-mid-pro-club-mens-shoes-Vgslvc.png',
@@ -180,6 +187,7 @@ const product = [
         fullPrice: 125,
         category: 'FOOTWEAR',
         color: ['blue', 'orange'],
+        curSize: [],
         size: [6, 6.5, 6, 7, 7.5, 8, 8.5, 9, 9.5, 10],
         paths: [
             'https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/304a0bcf-d790-4b33-9d09-8dcaf1416b97/air-jordan-1-mid-mens-shoes-FGLltd.png',
@@ -204,6 +212,7 @@ const product = [
         fullPrice: 110,
         category: 'FOOTWEAR',
         color: ['white', 'black'],
+        curSize: [],
         size: [6, 6.5, 6, 7, 7.5, 8, 8.5, 9, 9.5, 10],
         paths: [
             'https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/4c222a55-4162-4ac7-81c4-74e9f384cf1e/air-cross-trainer-3-low-mens-shoes-l9MqNc.png',
@@ -228,6 +237,7 @@ const product = [
         fullPrice: 110,
         category: 'FOOTWEAR',
         color: ['white', 'black'],
+        curSize: [],
         size: [6, 6.5, 6, 7, 7.5, 8, 8.5, 9, 9.5, 10],
         paths: [
             'https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/fadf1b0c-c687-4e3d-8f4e-6d089d115a0c/air-jordan-13-retro-shoe-08RC9v.png',
@@ -252,6 +262,7 @@ const product = [
         fullPrice: 210,
         category: 'FOOTWEAR',
         color: ['white', 'black'],
+        curSize: [],
         size: [6.5, 6, 7, 7.5, 8, 8.5, 9, 9.5, 10],
         paths: [
             'https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5/27dccc44-1449-4372-9ad8-177a025e47f6/air-jordan-7-retro-mens-shoes-098sXt.png',
@@ -276,6 +287,7 @@ const product = [
         fullPrice: 150,
         category: 'FOOTWEAR',
         color: ['white', 'black'],
+        curSize: [],
         size: [6, 6.5, 6, 7, 8, 8.5, 9, 9.5, 10],
         paths: [
             'https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5/8f5e136d-f36b-4d82-abaa-a217819db8c6/air-jordan-1-zoom-cmft-2-mens-shoes-Tw02qw.png',
@@ -300,6 +312,7 @@ const product = [
         fullPrice: 225,
         category: 'FOOTWEAR',
         color: ['white', 'black'],
+        curSize: [],
         size: [6, 6.5, 6, 7, 7.5, 8, 8.5, 9, 9.5, 10],
         paths: [
             'https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5/9c3a7b17-13f3-48da-a681-ff500b46cf6e/air-jordan-5-x-dj-khaled-mens-shoes-F3jrrH.png',
@@ -324,6 +337,7 @@ const product = [
         fullPrice: 130,
         category: 'FOOTWEAR',
         color: ['brown'],
+        curSize: [],
         size: [6, 6.5, 6, 8, 8.5, 9, 9.5, 10],
         paths: [
             'https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5/4fe7555a-63bf-4567-8f77-61dedb014bd6/metcon-8-mens-training-shoes-ppltpW.png',
@@ -348,6 +362,7 @@ const product = [
         fullPrice: 225,
         category: 'FOOTWEAR',
         color: ['grey', 'black'],
+        curSize: [],
         size: [6, 6.5, 6, 7, 7.5, 8, 8.5, 9, 9.5, 10],
         paths: [
             'https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5/e7c867e1-598a-4544-b670-1f378de3754e/air-max-alpha-trainer-5-mens-training-shoes-7LjRM6.png',
@@ -372,6 +387,7 @@ const product = [
         fullPrice: 100,
         category: 'FOOTWEAR',
         color: ['green', 'black'],
+        curSize: [],
         size: [6, 6.5, 6, 7, 7.5, 8, 8.5, 9, 9.5, 10],
         paths: [
             'https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5/9a86bd6d-597e-4711-ab52-3c697abde0f8/superrep-go-3-next-nature-flyknit-mens-training-shoes-9BPXdD.png',
@@ -396,6 +412,7 @@ const product = [
         fullPrice: 120,
         category: 'FOOTWEAR',
         color: ['white', 'black'],
+        curSize: [],
         size: [6, 6.5, 6, 7, 7.5, 8, 8.5, 9, 9.5, 10],
         paths: [
             'https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5/07f8765a-60ed-459a-a0a4-b0770769dfe7/savaleos-weightlifting-shoes-zvPDl7.png',
@@ -420,6 +437,7 @@ const product = [
         fullPrice: 275,
         category: 'FOOTWEAR',
         color: ['white', 'pink'],
+        curSize: [],
         size: [6, 6.5, 6, 7, 7.5, 8, 8.5, 9, 9.5, 10],
         paths: [
             'https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5/b12577db-0a1f-479f-9932-8a486b4c0bff/zoom-mercurial-superfly-9-elite-fg-firm-ground-soccer-cleats-sb8gJK.png',
@@ -444,6 +462,7 @@ const product = [
         fullPrice: 260,
         category: 'FOOTWEAR',
         color: ['red', 'blue'],
+        curSize: [],
         size: [6, 6.5, 6, 7, 7.5, 8, 8.5, 9, 9.5, 10],
         paths: [
             'https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5/1c55f887-7391-4ec4-9fc6-bf56a2cd9c92/zoom-mercurial-dream-speed-vapor-15-elite-fg-firm-ground-soccer-cleats-NLZxDR.png',
@@ -468,6 +487,7 @@ const product = [
         fullPrice: 275,
         category: 'FOOTWEAR',
         color: ['brown', 'black'],
+        curSize: [],
         size: [6, 6.5, 6, 7, 7.5, 8, 8.5, 9, 9.5, 10],
         paths: [
             'https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5/08c60ad0-aa4f-4178-a01b-55b87c83ff9a/phantom-gt2-elite-dynamic-fit-fg-firm-ground-soccer-cleats-Lj0t9H.png',
@@ -492,6 +512,7 @@ const product = [
         fullPrice: 250,
         category: 'FOOTWEAR',
         color: ['white', 'blue'],
+        curSize: [],
         size: [6, 6.5, 6, 7, 7.5, 8, 8.5, 9, 9.5, 10],
         paths: [
             'https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5/a20f1fef-e6c2-47e2-a594-bfc04dbe1208/gripknit-phantom-gx-elite-fg-firm-ground-soccer-cleats-WGRzk4.png',
@@ -516,6 +537,7 @@ const product = [
         fullPrice: 185,
         category: 'FOOTWEAR',
         color: ['white', 'black'],
+        curSize: [],
         size: [8, 8.5, 9, 9.5, 10],
         paths: [
             'https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5/25221a87-fb7e-496b-b44b-cf3425027cb6/jordan-adg-4-mens-golf-shoes-zw1ZGK.png',
@@ -540,6 +562,7 @@ const product = [
         fullPrice: 120,
         category: 'FOOTWEAR',
         color: ['white', 'pink'],
+        curSize: [],
         size: [5, 5.5, 6, 6.5, 7, 7.5, 8, 8.5, 9],
         paths: [
             'https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5/75307114-3936-44e3-8fbe-784ce3e9284d/free-metcon-4-womens-training-shoes-pxHVt9.png',
@@ -564,6 +587,7 @@ const product = [
         fullPrice: 150,
         category: 'FOOTWEAR',
         color: ['white', 'pink', 'black'],
+        curSize: [],
         size: [5, 5.5, 6, 6.5, 7, 7.5, 8, 8.5, 9],
         paths: [
             'https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5/5b5dbf44-822a-4cde-ae3e-6fdaba9540f8/air-max-270-womens-shoes-Pgb94t.png',
@@ -588,6 +612,7 @@ const product = [
         fullPrice: 175,
         category: 'FOOTWEAR',
         color: ['white', 'green', 'pink', 'black'],
+        curSize: [],
         size: [5, 5.5, 6, 6.5, 7, 8, 8.5, 9],
         paths: [
             'https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5/997ec546-18b4-4f8d-900f-20cda5e6d829/air-max-97-womens-shoes-Fr6rM4.png',
@@ -612,6 +637,7 @@ const product = [
         fullPrice: 210,
         category: 'FOOTWEAR',
         color: ['white', 'blue'],
+        curSize: [],
         size: [5, 6, 7, 7.5, 8.5, 9],
         paths: [
             'https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5/09af66f6-7ff5-4508-9c4f-8204080f02ee/air-vapormax-2021-flyknit-next-nature-womens-shoes-1WB8SL.png',
@@ -636,6 +662,7 @@ const product = [
         fullPrice: 220,
         category: 'FOOTWEAR',
         color: ['pink'],
+        curSize: [],
         size: [5, 5.5, 6, 6.5, 7, 7.5, 8, 8.5, 9],
         paths: [
             'https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5/dbd4c336-f10d-45bb-85c5-bce7b5dda725/air-vapormax-plus-womens-shoes-xbt7zf.png',
@@ -660,6 +687,7 @@ const product = [
         fullPrice: 160,
         category: 'FOOTWEAR',
         color: ['pink'],
+        curSize: [],
         size: [4, 5, 5.5, 6, 6.5, 8, 8.5, 9],
         paths: [
             'https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5/69b87e9f-972c-492e-8f3d-378b960a3eb8/react-infinity-3-womens-road-running-shoes-XpNmlR.png',
@@ -684,6 +712,7 @@ const product = [
         fullPrice: 150,
         category: 'FOOTWEAR',
         color: ['black'],
+        curSize: [],
         size: [4, 5, 5.5, 6, 6.5, 8, 8.5, 9, 10, 10.5, 11],
         paths: [
             'https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5/0ce7add4-1b72-45e0-a4d1-a68e095f30c7/woodside-ii-mens-boot-yjBPLR.png',
@@ -708,6 +737,7 @@ const product = [
         fullPrice: 225,
         category: 'FOOTWEAR',
         color: ['black'],
+        curSize: [],
         size: [4, 5, 5.5, 6, 6.5, 7, 7.5, 8, 8.5, 9, 10, 11, 11.5, 12],
         paths: [
             'https://static.nike.com/a/images/t_prod_ss/w_640,c_limit,f_auto/dee65fcd-24e4-422b-b9d9-28ef32836e61/acg-zoom-gaiadome-gore-tex-trails-end-brown-dd2858-200-release-date.jpg',
@@ -732,6 +762,7 @@ const product = [
         fullPrice: 180,
         category: 'FOOTWEAR',
         color: ['brown'],
+        curSize: [],
         size: [5.5, 6, 8, 8.5, 9, 10],
         paths: [
             'https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5/b62de5e8-f570-4d54-9b23-5b413b66d16e/air-force-1-mens-boots-jSg8gL.png',
@@ -756,6 +787,7 @@ const product = [
         fullPrice: 95,
         category: 'FOOTWEAR',
         color: ['white', 'black'],
+        curSize: [],
         size: [5.5, 6, 7, 7.5, 8, 8.5, 9, 9.5, 10],
         paths: [
             'https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5/5493fdea-be62-4796-b3e9-092f56495845/daybreak-womens-shoes-qLjcF9.png',
@@ -780,6 +812,7 @@ const product = [
         fullPrice: 90,
         category: 'FOOTWEAR',
         color: ['white', 'black'],
+        curSize: [],
         size: [5.5, 6, 7, 7.5, 8, 8.5, 9, 9.5, 10],
         paths: [
             'https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5/95e8c9c9-20df-4838-8020-cac860eec784/alpha-huarache-elite-4-low-mens-baseball-cleats-KhWfZJ.png',
@@ -804,6 +837,7 @@ const product = [
         fullPrice: 90,
         category: 'FOOTWEAR',
         color: ['white', 'blue'],
+        curSize: [],
         size: [5.5, 6, 7, 7.5, 8, 8.5, 9, 9.5, 10],
         paths: [
             'https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5/905d031a-192e-4f73-b1eb-080f2baeda85/alpha-huarache-elite-4-mid-mens-baseball-cleats-JDPv50.png',
@@ -828,6 +862,7 @@ const product = [
         fullPrice: 105,
         category: 'FOOTWEAR',
         color: ['white', 'red'],
+        curSize: [],
         size: [5.5, 6, 7, 7.5, 8, 8.5, 9, 9.5, 10],
         paths: [
             'https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5/fb7eda3c-5ac8-4d05-a18f-1c2c5e82e36e/blazer-mid-77-vintage-mens-shoes-nw30B2.png',
@@ -854,6 +889,7 @@ const product = [
         fullPrice: 180,
         category: 'FOOTWEAR',
         color: ['blue', 'yellow'],
+        curSize: [],
         size: [5.5, 6, 7, 7.5, 8, 8.5, 9, 9.5, 10],
         paths: [
             'https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5/758c805c-dde5-4df5-9780-56196bcc238a/air-jordan-1-retro-high-og-womens-shoes-LcJVSj.png',
@@ -880,6 +916,7 @@ const product = [
         fullPrice: 85,
         category: 'FOOTWEAR',
         color: ['yellow'],
+        curSize: [],
         size: [5.5, 6, 7, 7.5, 8, 8.5, 9, 9.5, 10],
         paths: [
             'https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5/94371f4a-23a4-4c03-b619-4190dde5b6ee/sb-zoom-verona-slip-prm-x-elissa-steamer-skate-shoes-xmDB05.png',
@@ -904,6 +941,7 @@ const product = [
         fullPrice: 160,
         category: 'FOOTWEAR',
         color: ['yellow', 'red', 'black', 'white', 'blue'],
+        curSize: [],
         size: [5.5, 6, 7, 7.5, 8, 8.5, 9, 9.5, 10],
         paths: [
             'https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5/87d7e901-4d08-4456-9d62-07e821aff45b/air-max-90-futura-womens-shoes-kvRZ4h.png',

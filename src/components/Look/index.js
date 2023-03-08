@@ -41,7 +41,7 @@ function Look({ products, path }) {
                                             name="size"
                                             className={cx('select-input')}
                                             onChange={(e) => {
-                                                e.target.value === '' ? setSelectValue(false) : setSelectValue(true);
+                                                setSelectValue(e.target.value);
                                             }}
                                         >
                                             <option value="" className={cx('select-options')}>
@@ -57,8 +57,18 @@ function Look({ products, path }) {
                                 </div>
                             ))}
                         </div>
-                        {selectValue && (
-                            <div className={cx('look-btn')} onClick={() => dispatch(actions.setCart(a))}>
+                        {selectValue != '' && (
+                            <div
+                                className={cx('look-btn')}
+                                onClick={() =>
+                                    dispatch(
+                                        actions.setCart({
+                                            item: a,
+                                            size: selectValue,
+                                        }),
+                                    )
+                                }
+                            >
                                 <p className={cx('btn-text')}>add to bag</p>
                             </div>
                         )}

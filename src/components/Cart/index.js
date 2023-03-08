@@ -6,6 +6,7 @@ import { useDispatch, useSelector } from 'react-redux';
 import styles from './Cart.module.scss';
 import * as actions from '~/store/actions';
 import { useEffect, useRef, useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 const cx = classNames.bind(styles);
 
 function Cart() {
@@ -14,6 +15,7 @@ function Cart() {
     const [total, setTotal] = useState();
 
     const dispatch = useDispatch();
+    const navigate = useNavigate();
     let menuRef = useRef();
 
     useEffect(() => {
@@ -62,14 +64,20 @@ function Cart() {
                     <div className={cx('modal-inner')}>
                         <div className={cx('modal-header')}>Cart</div>
                         <div className={cx('modal-body')}>
-                            {cart.map((item, index) => (
+                            {cart?.map((item, index) => (
                                 <div className={cx('item')} key={index}>
                                     <img src={item?.paths[0]} alt="item-img" className={cx('item-img')} />
                                     <div className={cx('item-info')}>
                                         <div className={cx('item-title')}>
-                                            {item.brand} {item.title}
+                                            {item?.brand} {item?.title}
                                         </div>
-                                        <div className={cx('size')}>Size: 3</div>
+                                        <div className={cx('size')}>
+                                            Size:
+                                            {item.curSize?.map((item, index) => (
+                                                <span key={index}> {item},</span>
+                                            ))}
+                                        </div>
+
                                         <div className={cx('bottom')}>
                                             <div className={cx('left')}>
                                                 <p>Quantity</p>
@@ -115,7 +123,9 @@ function Cart() {
                             <span>Total</span>
                             <span>${total}</span>
                         </div>
-                        <div className={cx('footer-btn')}>Checkout</div>
+                        <div className={cx('footer-btn')} onClick={() => navigate('/checkout')}>
+                            Checkout
+                        </div>
                     </div>
                 </div>
             </div>

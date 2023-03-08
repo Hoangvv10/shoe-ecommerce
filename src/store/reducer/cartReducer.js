@@ -8,9 +8,13 @@ const cartReducer = (state = cartState, action) => {
     switch (action.type) {
         case actionTypes.SET_CART_ITEM:
             let cart1 = state.cart;
-            const index1 = cart1.findIndex((x) => x.id === action.payload.id);
+            const index1 = cart1.findIndex((x) => x.id === action.payload.item.id);
+            action.payload.item.curSize = [...action.payload.item.curSize, action.payload.size];
+            action.payload.item.curSize = action.payload.item.curSize.filter(
+                (item, index) => action.payload.item.curSize.indexOf(item) === index,
+            );
 
-            if (cart1.includes(action.payload)) {
+            if (cart1.includes(action.payload.item)) {
                 cart1[index1].quantity += 1;
                 return {
                     ...state,
@@ -19,14 +23,20 @@ const cartReducer = (state = cartState, action) => {
             } else {
                 return {
                     ...state,
-                    cart: [...state.cart, action.payload],
+                    cart: [...cart1, action.payload.item],
                 };
             }
 
         case actionTypes.DELETE_ITEM_CART:
+            let delCart = state.cart;
+            const delIndex = delCart.findIndex((x) => x.id === action.iid);
+
+            state.cart[delIndex].curSize = [];
+            delCart.splice(delIndex, 1);
+
             return {
                 ...state,
-                cart: state.cart.filter((item) => item.id !== action.iid),
+                cart: [...delCart],
             };
 
         case actionTypes.DECRE_ITEM_CART:

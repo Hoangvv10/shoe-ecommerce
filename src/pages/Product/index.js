@@ -13,6 +13,7 @@ function Product() {
     const [curItem, setCurItem] = useState(null);
     const [curId, setCurId] = useState(0);
     const [isActive, setIsActive] = useState();
+    const [curSize, setCurSize] = useState(0);
 
     const dispatch = useDispatch();
 
@@ -64,7 +65,10 @@ function Product() {
                                         'is-active': isActive === index,
                                     })}
                                     key={index}
-                                    onClick={() => setIsActive(index)}
+                                    onClick={() => {
+                                        setIsActive(index);
+                                        setCurSize(item);
+                                    }}
                                 >
                                     {item}
                                 </div>
@@ -78,7 +82,14 @@ function Product() {
                                 btn: true,
                                 primary: true,
                             })}
-                            onClick={() => dispatch(actions.setCart(curItem))}
+                            onClick={() =>
+                                dispatch(
+                                    actions.setCart({
+                                        item: curItem,
+                                        size: curSize,
+                                    }),
+                                )
+                            }
                         >
                             Add to Bag
                         </button>
