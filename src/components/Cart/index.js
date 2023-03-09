@@ -78,7 +78,10 @@ function Cart() {
                                         <div className={cx('size')}>
                                             Size:
                                             {item.curSize?.map((item, index) => (
-                                                <span key={index}> {item},</span>
+                                                <>
+                                                    {index > 0 && ', '}
+                                                    <span key={index}> {item}</span>
+                                                </>
                                             ))}
                                         </div>
 

@@ -3,11 +3,12 @@ import styles from './Header.module.scss';
 import classNames from 'classnames/bind';
 import Search from '~/components/Search';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faCartShopping, faCodeCompare } from '@fortawesome/free-solid-svg-icons';
-import { faHeart, faUser } from '@fortawesome/free-regular-svg-icons';
+import { faCodeCompare } from '@fortawesome/free-solid-svg-icons';
+import { faHeart } from '@fortawesome/free-regular-svg-icons';
 import Navigate from '~/components/Navigate';
 import { useNavigate } from 'react-router-dom';
 import Cart from '~/components/Cart';
+import Login from '~/components/Login';
 
 const cx = classNames.bind(styles);
 
@@ -58,10 +59,7 @@ function Header() {
                             <FontAwesomeIcon className={cx('item-icon')} icon={faHeart} />
                             <span className={cx('item')}>Wishlist</span>
                         </div>
-                        <div className={cx('right-item')}>
-                            <FontAwesomeIcon className={cx('item-icon')} icon={faUser} />
-                            <span className={cx('item')}>Login</span>
-                        </div>
+                        <Login />
                         <Cart />
                     </div>
                 </div>

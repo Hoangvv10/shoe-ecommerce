@@ -1,0 +1,131 @@
+.item-icon {
+    height: 25px;
+    width: 50px;
+}
+
+.right-item {
+    width: 7vw;
+    height: 35px;
+    display: flex;
+    font-weight: 400;
+    align-items: center;
+}
+
+.item {
+    font-size: 14px;
+    line-height: 18px;
+    text-transform: capitalize;
+}
+
+.wrapper {
+    position: fixed;
+    inset: 0;
+    background-color: rgba($color: #000000, $alpha: 0.5);
+    z-index: 9;
+}
+
+.inner {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.modal {
+    color: #000;
+    width: 30vw;
+    height: fit-content;
+    margin: 0 auto;
+    background-color: #fff;
+    border-radius: 8px;
+}
+
+.header {
+    text-align: center;
+    font-size: 2.6rem;
+    font-weight: 500;
+    padding: 16px 0 0;
+}
+
+.body {
+    margin: 16px 0;
+}
+
+.input,
+.submit {
+    font-size: 1.8rem;
+    height: 48px;
+    width: 90%;
+    margin: 0 auto;
+    border: 1px solid #a5a7a9;
+    margin-bottom: 12px;
+    border-radius: 4px;
+    padding: 0 12px;
+    display: flex;
+    align-items: center;
+}
+
+input::placeholder {
+    font-size: 1.4rem;
+}
+
+.sign-up-input,
+.number-input {
+    font-size: 1.8rem;
+    height: 48px;
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 12px;
+}
+
+.number-input,
+.name-input {
+    border: 1px solid #a5a7a9;
+    padding: 0 12px;
+    border-radius: 4px;
+}
+
+.submit {
+    justify-content: center;
+    border-radius: 12px;
+    font-size: 2rem;
+    cursor: pointer;
+    background-color: #20303d;
+    color: white;
+    margin-top: 36px;
+}
+
+.footer {
+    text-align: center;
+    margin-bottom: 16px;
+    font-weight: 400;
+    font-size: 1.6rem;
+}
+
+.inactive {
+    display: none;
+}
+
+.error-message {
+    width: 90%;
+    margin: 0 auto;
+    padding: 0 12px;
+    margin-top: -10px;
+    color: red;
+    font-weight: 300;
+}
+
+.sign-up {
+    color: #16ff00;
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.name-input {
+    width: 48%;
+    height: 48px;
+}
