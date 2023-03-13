@@ -9,6 +9,7 @@ import Navigate from '~/components/Navigate';
 import { useNavigate } from 'react-router-dom';
 import Cart from '~/components/Cart';
 import Login from '~/components/Login';
+import MobileMenu from '~/components/MobileMenu';
 
 const cx = classNames.bind(styles);
 
@@ -49,7 +50,9 @@ function Header() {
                             ></path>
                         </svg>
                     </div>
-                    <Search />
+                    <div className={cx('search')}>
+                        <Search />
+                    </div>
                     <div className={cx('mid-right')}>
                         <div className={cx('right-item')}>
                             <FontAwesomeIcon className={cx('item-icon')} icon={faCodeCompare} />
@@ -61,6 +64,10 @@ function Header() {
                         </div>
                         <Login />
                         <Cart />
+                    </div>
+
+                    <div className={cx('mobile-menu')}>
+                        <MobileMenu />
                     </div>
                 </div>
             </div>

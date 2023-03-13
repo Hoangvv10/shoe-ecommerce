@@ -73,3 +73,27 @@
     color: #fff;
     justify-content: center;
 }
+
+@media only screen and (max-width: 600px) {
+    .top,
+    .middle {
+        padding: 0;
+    }
+
+    .top-left {
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .logo {
+        min-width: 112px;
+        margin-left: 12px;
+    }
+
+    .top-right,
+    .search,
+    .mid-right,
+    .bottom {
+        display: none;
+    }
+}

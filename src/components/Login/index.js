@@ -121,8 +121,6 @@ function Login() {
         }
     }, []);
 
-    console.log(signUpErrors);
-
     return (
         <div>
             <div className={cx('right-item')} onClick={() => setOpen(true)}>

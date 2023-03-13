@@ -1,4 +1,4 @@
-import { faCartShopping, faMinus, faPlus } from '@fortawesome/free-solid-svg-icons';
+import { faBagShopping, faCartShopping, faMinus, faPlus } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import classNames from 'classnames/bind';
 import { useDispatch, useSelector } from 'react-redux';
@@ -47,7 +47,7 @@ function Cart() {
     return (
         <div className={cx('wrapper')}>
             <div className={cx('right-item')} onClick={() => setOpen(!open)}>
-                <FontAwesomeIcon className={cx('item-icon')} icon={faCartShopping} />
+                <FontAwesomeIcon className={cx('item-icon')} icon={faBagShopping} />
                 <span className={cx('item-cart')}>Cart</span>
                 {cart.length > 0 && <span className={cx('cart-num')}>{cart.length}</span>}
             </div>
@@ -68,8 +68,8 @@ function Cart() {
                     <div className={cx('modal-inner')}>
                         <div className={cx('modal-header')}>Cart</div>
                         <div className={cx('modal-body')}>
-                            {cart?.map((item, index) => (
-                                <div className={cx('item')} key={index}>
+                            {cart?.map((item) => (
+                                <div className={cx('item')} key={item.id}>
                                     <img src={item?.paths[0]} alt="item-img" className={cx('item-img')} />
                                     <div className={cx('item-info')}>
                                         <div className={cx('item-title')}>
@@ -77,11 +77,11 @@ function Cart() {
                                         </div>
                                         <div className={cx('size')}>
                                             Size:
-                                            {item.curSize?.map((item, index) => (
-                                                <>
-                                                    {index > 0 && ', '}
-                                                    <span key={index}> {item}</span>
-                                                </>
+                                            {item.curSize?.map((item, index1) => (
+                                                <span key={index1}>
+                                                    {index1 > 0 && ', '}
+                                                    <span> {item}</span>
+                                                </span>
                                             ))}
                                         </div>
 
