@@ -34,7 +34,6 @@ function Header() {
                     <div className={cx('logo')} onClick={() => navigate('/')}>
                         <svg
                             aria-hidden="true"
-                            className="pre-logo-svg"
                             focusable="false"
                             viewBox="0 0 24 24"
                             role="img"
@@ -54,10 +53,6 @@ function Header() {
                         <Search />
                     </div>
                     <div className={cx('mid-right')}>
-                        <div className={cx('right-item')}>
-                            <FontAwesomeIcon className={cx('item-icon')} icon={faCodeCompare} />
-                            <span className={cx('item')}>Compare Product</span>
-                        </div>
                         <div className={cx('right-item')}>
                             <FontAwesomeIcon className={cx('item-icon')} icon={faHeart} />
                             <span className={cx('item')}>Wishlist</span>

@@ -25,6 +25,11 @@
     font-weight: 400;
 }
 
+.logo {
+    transform: rotate(180deg);
+    text-align: center;
+}
+
 .top-left,
 .logo {
     min-width: 280px;
