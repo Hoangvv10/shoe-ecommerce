@@ -252,3 +252,17 @@
         opacity: 1;
     }
 }
+
+@media only screen and (max-width: 600px) {
+    .item-cart {
+        display: none;
+    }
+
+    .right-item,
+    .item-icon {
+        display: flex;
+        text-align: center;
+        color: #fff;
+        font-size: 1.2rem;
+    }
+}

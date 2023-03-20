@@ -126,7 +126,7 @@ function Checkout() {
                             <div className={cx('name')}>
                                 <input
                                     type="text"
-                                    placeholder="Họ"
+                                    placeholder="Họ *"
                                     name="firstName"
                                     className={cx('name-input')}
                                     value={formValues.firstName}
@@ -134,7 +134,7 @@ function Checkout() {
                                 />
                                 <input
                                     type="text"
-                                    placeholder="Tên"
+                                    placeholder="Tên *"
                                     name="lastName"
                                     className={cx('name-input')}
                                     value={formValues.lastName}
@@ -155,7 +155,7 @@ function Checkout() {
                                 <input
                                     type="text"
                                     name="number"
-                                    placeholder="Số điện thoại"
+                                    placeholder="Số điện thoại *"
                                     className={cx('address-input')}
                                     value={formValues.number}
                                     onChange={handleInput}
@@ -173,7 +173,7 @@ function Checkout() {
                                 <input
                                     type="text"
                                     name="address"
-                                    placeholder="Địa chỉ chi tiết"
+                                    placeholder="Địa chỉ chi tiết *"
                                     className={cx('address-input')}
                                     value={formValues.address}
                                     onChange={handleInput}

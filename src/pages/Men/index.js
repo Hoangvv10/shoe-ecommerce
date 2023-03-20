@@ -21,12 +21,7 @@ function Men() {
     }, []);
 
     return (
-        <div
-            className={cx('wrapper')}
-            style={{
-                minHeight: '1000px',
-            }}
-        >
+        <div className={cx('wrapper')}>
             <div className={cx('header')}>Men's shoes & sneaker ({list.length})</div>
             <Sidebar />
             <div className={cx('container')}>

@@ -184,3 +184,37 @@
 .right-icon {
     right: 10px;
 }
+
+@media only screen and (max-width: 600px) {
+    .wrapper {
+        margin-top: -140px;
+    }
+
+    .inner {
+        flex-wrap: wrap;
+    }
+
+    .left {
+        width: 100%;
+        padding: 0;
+        background-color: #fff;
+        z-index: 10;
+        position: relative;
+        flex-direction: column-reverse;
+        margin-bottom: 48px;
+    }
+
+    .big {
+        width: 100%;
+    }
+
+    .small {
+        flex-wrap: nowrap;
+        flex-direction: row;
+        min-width: 100%;
+        max-width: 100%;
+        height: fit-content;
+        gap: 4px;
+        overflow-y: visible;
+    }
+}

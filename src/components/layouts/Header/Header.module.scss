@@ -36,6 +36,10 @@
     justify-content: center;
 }
 
+.mobile-menu {
+    display: none;
+}
+
 .middle {
     padding: 0 60px;
     display: flex;
@@ -80,7 +84,6 @@
 }
 
 @media only screen and (max-width: 600px) {
-    .top,
     .middle {
         padding: 0;
     }
@@ -95,7 +98,7 @@
         margin-left: 12px;
     }
 
-    .top-right,
+    .top,
     .search,
     .mid-right,
     .bottom {
@@ -104,6 +107,12 @@
 
     .middle {
         display: flex;
-        justify-content: center;
+        justify-content: space-between;
+        padding-right: 24px;
+    }
+
+    .mobile-menu {
+        display: flex;
+        align-items: flex-end;
     }
 }

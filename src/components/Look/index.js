@@ -1,9 +1,6 @@
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import classNames from 'classnames/bind';
 import { useEffect, useRef, useState } from 'react';
 import { useDispatch } from 'react-redux';
-import { useNavigate } from 'react-router-dom';
-
 import * as actions from '~/store/actions';
 import styles from './Look.module.scss';
 
@@ -14,7 +11,6 @@ function Look({ products, path }) {
     const [selectValue, setSelectValue] = useState(false);
 
     const dispatch = useDispatch();
-    const navigate = useNavigate();
     let menuRef = useRef();
 
     useEffect(() => {

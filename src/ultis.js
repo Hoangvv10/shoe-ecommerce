@@ -13,7 +13,7 @@ const product = [
         curSize: [],
         size: [6, 6.5, 6, 7, 7.5, 8, 8.5, 9, 9.5, 10],
         paths: [
-            'https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/4f37fca8-6bce-43e7-ad07-f57ae3c13142/air-force-1-07-mens-shoes-5QFp5Z.png',
+            'https://static.nike.com/a/images/t_default/4f37fca8-6bce-43e7-ad07-f57ae3c13142/air-force-1-07-mens-shoes-5QFp5Z.png',
             'https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5/00375837-849f-4f17-ba24-d201d27be49b/air-force-1-07-mens-shoes-5QFp5Z.png',
             'https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5/3cc96f43-47b6-43cb-951d-d8f73bb2f912/air-force-1-07-mens-shoes-5QFp5Z.png',
             'https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5/33533fe2-1157-4001-896e-1803b30659c8/air-force-1-07-mens-shoes-5QFp5Z.png',
@@ -240,7 +240,7 @@ const product = [
         curSize: [],
         size: [6, 6.5, 6, 7, 7.5, 8, 8.5, 9, 9.5, 10],
         paths: [
-            'https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/fadf1b0c-c687-4e3d-8f4e-6d089d115a0c/air-jordan-13-retro-shoe-08RC9v.png',
+            'https://static.nike.com/a/images/t_PDP_1280_v1/f_auto,b_rgb:f5f5f5/07980032-ec67-40b6-a32d-72dca21128a1/air-jordan-13-retro-shoe-08RC9v.png',
             'https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5/60600d0e-b807-4e2e-8f92-cf020ed3af10/air-jordan-13-retro-shoe-08RC9v.png',
             'https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5/f5574dde-ceca-4390-af45-56745c2f68af/air-jordan-13-retro-shoe-08RC9v.png',
             'https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5/e57f0d4d-7bae-4a72-9336-d3a710b67f99/air-jordan-13-retro-shoe-08RC9v.png',

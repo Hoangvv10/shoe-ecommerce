@@ -57,6 +57,7 @@ function Header() {
                     </div>
 
                     <div className={cx('mobile-menu')}>
+                        <Cart />
                         <MobileMenu />
                     </div>
                 </div>
