@@ -25,15 +25,15 @@
     font-weight: 400;
 }
 
-.logo {
-    transform: rotate(180deg);
-    text-align: center;
-}
-
 .top-left,
 .logo {
     min-width: 280px;
     cursor: pointer;
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
 }
 
 .middle {
@@ -100,5 +100,10 @@
     .mid-right,
     .bottom {
         display: none;
+    }
+
+    .middle {
+        display: flex;
+        justify-content: center;
     }
 }

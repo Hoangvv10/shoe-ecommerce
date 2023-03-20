@@ -1,11 +1,78 @@
 .modal {
+    left: 0;
+    background-color: rgba($color: #000000, $alpha: 0.6);
+    color: #000000;
     position: fixed;
-    inset: 0px;
-    height: 100%;
+    top: 0;
+    bottom: 0;
+    z-index: 999;
+    right: 0;
+}
+
+.modal-wrapper {
+    position: relative;
+    width: 64vw;
+    height: 64vh;
+    margin: 20vh auto 0;
+    background-color: #fff;
+    border-radius: 30px;
+    overflow: hidden;
+}
+
+.show-up {
+    -webkit-animation: scale-in-center 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+    animation: scale-in-center 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+
+@-webkit-keyframes scale-in-center {
+    0% {
+        -webkit-transform: scale(0);
+        transform: scale(0);
+        opacity: 1;
+    }
+    100% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+@keyframes scale-in-center {
+    0% {
+        -webkit-transform: scale(0);
+        transform: scale(0);
+        opacity: 1;
+    }
+    100% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+.inactive {
+    display: none;
+}
+
+.modal-inner {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.wrapper {
+    flex-grow: 1;
+    max-width: 33.3333%;
+    max-height: 33.3333%;
+    position: relative;
+    margin-right: 4px;
+    cursor: pointer;
+}
+
+.look-slider__img,
+.modal-inner,
+.look-slider {
     width: 100%;
-    background-color: rgba(17, 17, 17, 0.4);
-    backdrop-filter: blur(4px);
-    z-index: 100;
+    height: 100%;
 }
 
 .slider-btn {
@@ -18,16 +85,6 @@
     color: #fff;
     border-radius: 16px;
     cursor: pointer;
-}
-
-.look-item {
-    display: flex;
-    max-width: 892px;
-    min-width: 446px;
-    width: fit-content;
-    border-radius: 30px;
-    overflow: hidden;
-    background-color: #fff;
 }
 
 .look-item__img {
@@ -44,9 +101,12 @@
     display: flex;
     align-items: center;
     flex-wrap: wrap;
-    max-height: 350px;
-    overflow-y: auto;
+    max-height: 70%;
     margin-top: 20px;
+}
+
+.look-body {
+    overflow-y: auto;
 }
 
 .look-info {
@@ -55,13 +115,13 @@
 }
 
 .look-body__img {
-    flex: 140px 0 0;
-    width: 140px;
+    flex: 40% 0 0;
+    width: 40%;
     height: auto;
 }
 
 .descript {
-    flex: 1;
+    width: 60%;
     padding: 0 24px;
     vertical-align: baseline;
 }
@@ -96,7 +156,7 @@
     position: absolute;
     bottom: 24px;
     right: 24px;
-    width: calc(446px - 48px);
+    width: 44%;
     background-color: #111;
     min-height: 60px;
     border-radius: 30px;
@@ -111,24 +171,40 @@
     font-size: 1.6rem;
 }
 
-.look-slider {
-    flex-grow: 1;
-    max-width: 33.3333%;
-    max-height: 33.3333%;
-    position: relative;
-    margin-right: 4px;
-    cursor: pointer;
-}
-
-.look-slider__img {
-    width: 100%;
-    height: 100%;
-}
-
 @media only screen and (max-width: 600px) {
-    .look-slider {
+    .wrapper {
         width: 100%;
         max-width: 100%;
         margin-top: 12px;
+    }
+
+    .modal-wrapper {
+        width: 90vw;
+        height: 50vh;
+    }
+
+    .look-item__img {
+        width: 100%;
+        height: 50%;
+    }
+
+    .look-body {
+        width: 100%;
+        height: 50%;
+        margin-top: 0;
+    }
+
+    .look-title {
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+    }
+
+    .look-title,
+    .look-price,
+    .select-input,
+    .look-subtitle {
+        font-size: 1rem;
+        height: 20px;
     }
 }
