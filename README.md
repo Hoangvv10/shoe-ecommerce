@@ -6,6 +6,8 @@
 
 ######
 
+-   Demo.
+    (https://shoe-ecommerce-henna.vercel.app/)
 -   Home.
     (https://i.ibb.co/PhVk0g2/homepage.png)
 -   Login.
